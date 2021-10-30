@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Practical JavaScript</title>
+    <script>
+        let array=new Array("logo green.png","logo red.png");
+        let i=1;
+        let ref;
+
+        function picLibrary(){
+            document.images[0].src=array[i];
+            i++;
+            if (i<2)
+                i=0;
+        }
+        function start(){
+            ref=setInterval("picLibrary()",1000);
+        }
+        function stop(){
+            clearInterval(ref);
+        }
+    </script>
+</head>
+<body>
+<img src="logo%20green.png" name="img1" onmouseover="stop()" onmouseout="start()"/>
+</body>
+</html>

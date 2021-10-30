@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays Practical JavaScript</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var arr= new Array(2,4,1,5,6,3);
+    var i,j;
+    var temp;
+
+    document.write("<br/><br/>Before Sort <br/>");
+
+    for (i=0;i<6;i++){
+        document.write(arr[i] + "<br/>");
+    }
+    for (i=0;i<6;i++){
+        for (j=0;j<5;j++){
+            if (arr[j] > arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+
+    document.write("<br/> <br/>After Sort..<br/>")
+    for (i=0;i<6;i++){
+        document.write(arr[i] + "<br/>");
+    }
+</script>
+
+</body>
+</html>

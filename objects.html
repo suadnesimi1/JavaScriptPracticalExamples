@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects Practical JavaScript</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    let tutorial ={
+        "topic": "<i>Javascript<i/>",
+        "student": "<i>Suad Nesimi</i>",
+        "mode": "<i>Online</i>"
+    };
+    document.write("<b>Topic:</b> "+tutorial.topic+"<br/>");
+    document.write("<b><br/>Student:</b> "+tutorial.student+"<br/>");
+    document.write("<b><br/>Mode:</b> "+tutorial.mode+"<br/>");
+
+    let txt="";
+    let x;
+    for (x in tutorial){
+        txt+=tutorial[x] + " , ";
+    }
+    document.write("<br/>"+txt);
+
+</script>
+
+</body>
+</html>

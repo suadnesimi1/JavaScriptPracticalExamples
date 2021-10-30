@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events Practical JavaScript</title>
+    <script language="JavaScript" type="text/javascript">
+        function mouseOver(){
+            document.images["img1"].src="logo red.png";
+        }
+        function mouseOut(){
+            document.images["img1"].src="logo green.png";
+        }
+        function load(){
+            document.images["img1"].src ="logo green.png";
+        }
+
+    </script>
+</head>
+<body onload="load()">
+<img name="img1" onmouseover="mouseOver()" onmouseout="mouseOut()">
+
+</body>
+</html>
